@@ -13,7 +13,7 @@ To get started with LedFx run the following from the project root:
 Device Support
 ==============
 
-LedFx currently only supports E1.31 capable devices, including the `ESPixelStick firmware <https://github.com/forkineye/ESPixelStick/>`__ for any ESP8266 based controller. Upon first launch LedFx will create a default configuration file in the '.ledfx' folder inside the active user profile. The exact path will be printed to the command window. To add a device modify config.yaml as follows:
+LedFx currently supports E1.31 capable devices, including the `ESPixelStick firmware <https://github.com/forkineye/ESPixelStick/>`__ for any ESP8266 based controller. Upon first launch LedFx will create a default configuration file in the '.ledfx' folder inside the active user profile. The exact path will be printed to the command window. To add a device modify config.yaml as follows:
 
 .. code-block:: yaml
 
@@ -37,6 +37,13 @@ Optionally, the config can be simplified down to:
         name: Sample Device
         host: 192.168.1.100
         pixel_count: 100
+
+Also, connecting devices via an UDP packet with 8-bit RGB data is now supported.
+Just use the simplified config, but set its device type to:
+
+.. code-block:: yaml
+
+        type: udp_rgb
 
 Web-Interface
 =============
