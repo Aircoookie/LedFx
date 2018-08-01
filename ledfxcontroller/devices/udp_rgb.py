@@ -44,6 +44,8 @@ class UdpRgbDevice(Device):
         p = np.copy(np.clip(data, 0, 255).astype(int))
  
         m = []
+        m.append(2)
+        m.append(2)
         for i in range(len(p)):
           m.append(p[i][0])  # Pixel red value
           m.append(p[i][1])  # Pixel green value
