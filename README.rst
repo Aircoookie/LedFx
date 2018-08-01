@@ -39,16 +39,17 @@ Optionally, the config can be simplified down to:
         pixel_count: 100
 
 Also, connecting devices via an UDP packet with 8-bit RGB data is now supported.
-Just use the simplified config, but set its device type to:
+Just use the simplified config, but change the device type and specify the network port:
 
 .. code-block:: yaml
 
         type: udp_rgb
+        port: 21324
 
 Web-Interface
 =============
 
-LedFx is intended to be ran on a small PC such as a Raspberry Pi, thus all configuration is done through a web-interface. The current UI is very simple and enable control of an individaul device's effect, as well as providers a way to visualize the effect.
+LedFx is intended to be ran on a small PC such as a Raspberry Pi, thus all configuration is done through a web-interface. The current UI is very simple and enable control of an individual device's effect, as well as providers a way to visualize the effect.
 
 |screenshot-webinterface|
 
